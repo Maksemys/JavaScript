@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Task 3</title>
+</head>
+<body>
+	<style>
+		body {
+			padding: 3.125rem;
+		}
+		.link {
+			text-decoration: none;
+			color: black;
+			background-color: rgb(0, 136, 255);
+			padding-inline: 0.9375rem;
+			padding-block: 0.625rem;
+			border-radius: 0.625rem;
+			transition: background-color 0.3s;
+		}
+
+		.link:hover {
+			background-color: rgb(4, 107, 197);
+		}
+
+		.button {
+			display: block;
+			background-color: violet;
+			font-size: 1.25rem;
+			padding-inline: 1.25rem;
+			padding-block: 0.3125rem;
+			border: none;
+			border-radius: 0.625rem;
+			cursor: pointer;
+			transition: background-color 0.3s;
+		}
+
+		.button:hover {
+			background-color: rgb(210, 53, 210);
+		}
+
+		.button:not(:last-child) {
+			margin-block-end: 1.25rem;
+		}
+		.task {
+			margin-block-end: 1.25rem;
+		}
+	</style>
+	<a class="link" href="../index.html">Повернутися на головну</a>
+	<h1>Task 3</h1>
+	<div class="task">Задача 0.Вивести на екран 8 кнопок з написом “Hello”.</div>
+	<div class="target"></div>
+	<script src="../js/script3.js"></script>
+</body>
+</html>

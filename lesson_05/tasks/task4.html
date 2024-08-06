@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/style.css">
+	<title>Task 4</title>
+</head>
+<body>
+	<style>
+		.list {
+			padding-inline-start: 1.25rem;
+		}
+
+		.item {
+			font-size: 20px;
+			font-weight: 600;
+			line-height: 1.2;
+		}
+
+		.item::before {
+			content: "";
+			width: 0.625rem;
+			height: 0.625rem;
+			border-radius: 50%;
+			margin-inline-end: 10px;
+			background-color: black;
+			transition: background-color 0.3s;
+			margin-block-end: 0.125rem;
+		}
+
+		.item:not(:last-child) {
+			margin-block-end: 0.625rem;
+		}
+	</style>
+	<header class="header">
+		<a class="button" href="../index.html">Повернутися на головну</a>
+		<h1 class="header__title">Task 4</h1>
+	</header>
+	<main class="page">
+		<div class="page__task">Задача 1.Вивести з використанням циклів маркований список з випадковими числами (1-100). Кількість випадкових чисел вводиться користувачем. </div><br>
+	</main>
+	<script src="../js/script4.js"></script>
+</body>
+</html>
