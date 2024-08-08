@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/style.css">
+	<title>Task 1</title>
+	<style>
+      .container {
+        width: 500px;
+        height: 400px;
+        margin: 0 auto;
+		  box-shadow: 5px 5px 15px;
+		  display: flex;
+		  gap: 20px;
+		  align-items: flex-end;
+		  justify-content: space-around;
+		  background-color: #cbdbd1;
+		  border-radius: 8px;
+      }
+      .item {
+        width: 30px;
+        text-align: center;
+		  padding-block-start: 5px;
+		  padding-block-end: 5px;
+		  border-radius: 5px 5px 0 0;
+      }
+		.item:nth-child(odd) {
+			background-color: rgb(255, 242, 0);
+		}
+		.item:nth-child(even) {
+			background-color: blue;
+			color: #fff;
+		}
+    </style>
+</head>
+<body>
+	<header class="header">
+		<a class="button" href="../index.html">Повернутися на головну</a>
+		<h1 class="header__title">Task 1</h1>
+	</header>
+	<main class="page">
+		<div class="page__task">
+			<p>Вивести вертикальну діаграму з 10 рандомними значеннями (0-100)</p><br>
+		</div>
+	</main>
+	<script src="../js/script1.js"></script>
+</body>
+</html>
