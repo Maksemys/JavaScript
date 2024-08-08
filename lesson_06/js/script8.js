@@ -9,7 +9,7 @@ let totalSumYears = 0
 // for (let num = 1; num <= depositYears; num++){
 // 	sumEarningsYear = investorMoney*yearPercent*num
 // 	totalSumYears = sumEarningsYear+investorMoney
-// 	document.write(`Дохід за ${num} років складає ${totalSumYears}грн<br>`)
+// 	document.write(`Дохід за ${num} років складає ${Math.round(totalSumYears)}грн<br>`)
 // }
 //складні відсотки
 for (let num = 1; num <= depositYears; num++){
