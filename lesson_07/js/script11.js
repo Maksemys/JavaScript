@@ -20,4 +20,4 @@ function getPositiveTemperatureAverage(indicationNum) {
 let indicationNum = parseInt(prompt(`Введіть кількість показників температури`))
 
 document.write(`Всього було введено ${indicationNum} показників температури<br><br>`)
-document.write(`Cереднє значення для додатних показів температур дорівнює ${getPositiveTemperatureAverage(indicationNum)}<sup>o</sup>C`)
+document.write(`Cереднє значення для додатних показів температур дорівнює ${getPositiveTemperatureAverage(indicationNum).toFixed(1)}<sup>o</sup>C`)
