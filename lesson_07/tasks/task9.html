@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/style.css">
+	<title>Task 9</title>
+	<style>
+		.bunner{
+		position: relative;
+		margin: 2.5rem;
+		}
+		.title{
+		position: absolute;
+		left: 75%;
+		top: 47%;
+		font-size: clamp(1rem, 5vw, 4rem);
+		line-height: 1.2;
+		font-weight: 700;
+		text-align: center;
+		background: #F9ED0B;
+		background: linear-gradient(to right, #F9ED0B 0%, #108FF6 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		}
+		img {
+		width: 100%;
+		transition: transform 0.3s;
+		}
+		img:hover {
+		transform: scale(0.99);
+		}
+		</style>
+</head>
+<body>
+	<header class="header">
+		<a class="header__button button" href="../index.html">Повернутися на головну</a>
+		<h1 class="header__title">Task 9</h1>
+	</header>
+	<main class="page">
+		<div class="page__task">
+			<p>
+				Задача 8. Створити функцію, яка виводить банер (у функцію передаються: зображення, заголовок та посилання, куди переходимо при кліку на зображення (тег img повине знаходитись у середині тега a: &lt;a&gt; &lt;img src=”шлях”&gt; &lt;/a&gt;))
+			</p>
+		</div>
+		
+	</main>
+	<script src="../js/script9.js"></script>
+</body>
+</html>
