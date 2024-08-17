@@ -3,8 +3,8 @@
 
 if(confirm('Почати тестування?')) { 
 
-// функція для генерування єлементів(1-1000)
-function generateElements(elementNumbers, minNum = 1, maxNum = 1000) {
+// функція для генерування єлементів(1-150)
+function generateElements(elementNumbers, minNum = 1, maxNum = 150) {
 	let arr = []
 	for (let i = 0; i < elementNumbers; i++) {
 		let num = minNum + Math.floor(Math.random() * (maxNum - minNum + 1))
@@ -13,7 +13,7 @@ function generateElements(elementNumbers, minNum = 1, maxNum = 1000) {
 	return arr
 }
 
-let elementNumbers = parseInt(prompt('Скільки елементів масиву сгенерувати?'))
+let elementNumbers = parseInt(prompt('Скільки елементів масиву сгенерувати?', '10'))
 let arrElements = generateElements(elementNumbers)
 
 document.write(`Сгенерований масив: ${arrElements} <br><br>`)
