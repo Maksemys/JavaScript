@@ -30,7 +30,7 @@ function generatePrices(periodNum, min = 1, max = 10000) {
 	return arr
 }
 
-let periodNum = parseInt(prompt('Який період? Введіть кількість днів', '10'))
+let periodNum = parseInt(prompt('Який період? Введіть кількість цін', '10'))
 let pricesHistory = generatePrices(periodNum)
 
 document.write(`масив з цінами [${pricesHistory}]<br><br>`)
