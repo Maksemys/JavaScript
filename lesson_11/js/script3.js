@@ -5,7 +5,7 @@
 
 
 
-// if(confirm('Почати тестування?')) { 
+if(confirm('Почати тестування?')) { 
 
 let battlefield = [
 	[0, 0, 0, 0, 0, 0],
@@ -20,13 +20,11 @@ let battlefield = [
 
 function pushShipsRandom(battlefield, rows = 6, columns = 6, ships = 5) {
 	for (let num = 0; num < ships; ) {
-		// Вибираємо випадкові індекси для рядка і стовпця
 		let rowIndex = Math.floor(Math.random() * rows)
 		let columnIndex = Math.floor(Math.random() * columns)
 		if (battlefield[rowIndex][columnIndex] === 1)
 			continue
 		else if (battlefield[rowIndex][columnIndex] === 0) {
-			// Встановлюємо одиницю в масиві
 			battlefield[rowIndex][columnIndex] = 1
 			num++
 		}
@@ -59,5 +57,5 @@ if (ships === 0) {
 }
 
 
-// }
+}
 
