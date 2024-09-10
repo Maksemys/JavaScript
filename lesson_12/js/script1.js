@@ -31,7 +31,6 @@ do {
 			randomNumbers[i] = tmp
 			changed = true
 			swapCount++ // Збільшуємо лічильник обмінів
-			console.log(randomNumbers)
 		}
 	}
 } while (changed)
