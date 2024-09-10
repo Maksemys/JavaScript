@@ -78,7 +78,6 @@ cocktailSort([...randomNumbers]);
 
 function insertSort(arr) {
 	let step = 1
-	let swapCount = 0
 	for (let k = 1; k < arr.length; k++) {
 		const currentElement = arr[k]
 		let i = k - 1
