@@ -84,10 +84,10 @@ function insertSort(arr) {
 		while (i >= 0 && arr[i] > currentElement) {
 			arr[i + 1] = arr[i]
 			i = i - 1
-			console.log(`insertionSort шаг номер ${step}: [${arr}]`)
-			step++
 		}
 		arr[i + 1] = currentElement
+		console.log(`insertionSort шаг номер ${step}: [${arr}]`)
+		step++
 	}
 }
 
