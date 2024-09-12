@@ -1,0 +1,121 @@
+@use "sass:math";
+
+/* Локальне підключення шрифтів */
+@import "_fonts.scss";
+
+/* Підключення шрифтів */
+
+/* Скидання стилів */
+@import "_reset.scss";
+
+// Міксіни
+@import "_mixins.scss";
+
+// Налаштування адаптивної сітки ===============================================================================================================================================================================================================================================================================================
+
+// Мінімальна ширина сторінки
+$minWidth: 320;
+// Ширина полотна (макету)
+$maxWidth: 1920;
+// Ширина обмежуючого контейнера (0 = немає обмеження)
+$maxWidthContainer: 1290;
+// Загальний відступ у контейнера
+// (30 = по 15px ліворуч і праворуч, 0 = немає відступу)
+$containerPadding: 30;
+// Ширина спрацьовування першого брейкпоінту
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+// ==========================================================
+
+body {
+	background-color: rgb(212, 209, 209);
+	font-family: 'Roboto', sans-serif;
+	padding: 0.625rem;
+
+}
+
+.header {
+	padding-block-start: 3.125rem;
+	padding-inline: 1.25rem;
+
+	&__title {
+		font-size: 2.5rem;
+		font-weight: 700;
+		text-align: center;
+		line-height: 1.2;
+	}
+}
+
+.page {
+	max-width: 1930px;
+	padding-inline: 15px;
+	&__task {
+		padding: 1.25rem;
+	}
+}
+
+.block {
+	// max-width: 600px;
+	// margin: 0 auto;
+	padding: 3.125rem;
+}
+
+.block > *:not(:last-child) {
+	margin-block-end: 1.5625rem;
+}
+
+.block__list {
+
+}
+
+.block__item {
+
+}
+
+.block__item:not(:last-child) {
+	margin-block-end: 0.625rem;
+}
+
+.block__link {
+	font-size: 1.25rem;
+	font-weight: 600;
+	line-height: 1.2;
+	// text-align: center;
+	transition: color 0.3s;
+	margin-block-end: 0.9375rem;
+}
+
+.block__link:hover {
+	color: rgb(231, 144, 21);
+}
+
+.block__link::before {
+	content: "";
+	width: 0.625rem;
+	height: 0.625rem;
+	border-radius: 50%;
+	margin-inline-end: 10px;
+	background-color: black;
+	transition: background-color 0.3s;
+	vertical-align: middle;
+}
+
+.block__link:hover::before {
+	background-color: rgb(231, 144, 21);
+}
+
+.button {
+	border: 0.0625rem solid black;
+	padding-inline: 1.25rem;
+	padding-block: 0.625rem;
+	border-radius: 0.625rem;
+	transition: all 0.3s;
+}
+
+.button:hover {
+	background-color: rgb(231, 144, 21);
+	border:  0.0625rem solid rgb(231, 144, 21);
+	color: #fff;
+}
+
+
