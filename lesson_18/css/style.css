@@ -1,0 +1,167 @@
+@charset "UTF-8";
+/* Локальне підключення шрифтів */
+@font-face {
+  font-family: "Satoshi";
+  src: url("../fonts/Satoshi-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("../fonts/Satoshi-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("../fonts/Satoshi-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Integral CF";
+  src: url("../fonts/IntegralCF-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+/* Підключення шрифтів */
+/* Скидання стилів */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  line-height: 1;
+  height: 100%;
+}
+
+/* FORM */
+button,
+select,
+option {
+  cursor: pointer;
+}
+
+body {
+  background-color: rgb(212, 209, 209);
+  font-family: "Roboto", sans-serif;
+  padding: 0.625rem;
+}
+
+.header {
+  -webkit-padding-before: 3.125rem;
+          padding-block-start: 3.125rem;
+  padding-inline: 1.25rem;
+}
+.header__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.page {
+  max-width: 1930px;
+  padding-inline: 15px;
+}
+.page__task {
+  padding: 1.25rem;
+}
+
+.block {
+  padding: 3.125rem;
+}
+
+.block > *:not(:last-child) {
+  -webkit-margin-after: 1.5625rem;
+          margin-block-end: 1.5625rem;
+}
+
+.block__item:not(:last-child) {
+  -webkit-margin-after: 0.625rem;
+          margin-block-end: 0.625rem;
+}
+
+.block__link {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.2;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  -webkit-margin-after: 0.9375rem;
+          margin-block-end: 0.9375rem;
+}
+
+.block__link:hover {
+  color: rgb(231, 144, 21);
+}
+
+.block__link::before {
+  content: "";
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 50%;
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+  background-color: black;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  vertical-align: middle;
+}
+
+.block__link:hover::before {
+  background-color: rgb(231, 144, 21);
+}
+
+.button {
+  border: 0.0625rem solid black;
+  padding-inline: 1.25rem;
+  padding-block: 0.625rem;
+  border-radius: 0.625rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.button:hover {
+  background-color: rgb(231, 144, 21);
+  border: 0.0625rem solid rgb(231, 144, 21);
+  color: #fff;
+}
